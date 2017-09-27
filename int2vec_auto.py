@@ -47,6 +47,9 @@ chapter_even_numbers = np.random.choice(
     a=even_numbers, size=FLAGS.chapter_size, replace=True)
 chapter_odd_numbers = np.random.choice(
     a=odd_numbers, size=FLAGS.chapter_size, replace=True)
+print(chapter_even_numbers[:3])
+print(chapter_odd_numbers[:3])
+
 
 # Autoencoder #################################################################
 
@@ -62,6 +65,8 @@ auto_x_odd = [np.array(chapter_odd_numbers[i])
 
 auto_y_odd = [np.array(chapter_odd_numbers[i])
               for i in range(FLAGS.chapter_size)]
+print(auto_x_even[:3])
+print(auto_y_even[:3])
 
 # Combine the data
 auto_x_all = auto_x_even + auto_x_odd

@@ -57,6 +57,7 @@ chapter_noise = np.random.randint(
 chapter = chapter + chapter_noise
 chapter[chapter < min_inc_num] = min_inc_num
 chapter[chapter > max_inc_num] = max_inc_num
+print(chapter[:20])
 
 
 # Skip-gram ################################################################

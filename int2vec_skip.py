@@ -63,6 +63,9 @@ skip_x_odd = [np.array(chapter_odd_numbers[i])
 
 skip_y_odd = [np.array([chapter_odd_numbers[i-1], chapter_odd_numbers[i+1]])
               for i in range(1, FLAGS.chapter_size - 1)]
+print(chapter_even_numbers[:3])
+print(skip_x_even[0])
+print(skip_y_even[0])
 
 # Combine the data
 skip_x_all = skip_x_even + skip_x_odd
